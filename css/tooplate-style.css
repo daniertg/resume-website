@@ -74,7 +74,11 @@ h3,
 b, strong {
   font-weight: bold;
 }
-
+.project-info .custom-btn{
+  display: inline-block;
+  align-content: center;
+  width: 25%;
+}
 .custom-btn {
   background: #eee;
   color: #5b5b5b;
@@ -323,11 +327,10 @@ b, strong {
 
 .timeline-yr {
   background: #474559;
-  border-radius: 100%;
+  border-radius: 40%;
   position: absolute;
   width: 75px;
-  height: 75px;
-  line-height: 75px;
+  height: 40px;
   text-align: center;
 }
 .timeline-yr span {
@@ -335,7 +338,7 @@ b, strong {
   font-size: 10px;
   font-weight: bold;
   display: block;
-  line-height: 75px;
+  line-height: 40px;
 }
 
 .timeline-info {
@@ -352,8 +355,59 @@ b, strong {
   vertical-align: middle;
   margin-left: 15px;
 }
+
+/* 
+.timeline-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 22px 0;
+  position: relative;
+} */
+
+.timeline-yr {
+  margin-right: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.timeline-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 2px solid #e7e6e6; */
+}
+
+.timeline-info h6{
+  color: #807e7e;
+
+}
+.timeline-info {
+  flex: 1;
+  color: #333;
+  padding-right: 20px; /* Memberikan jarak antara info dan tahun */
+}
+
+.timeline-year {
+  background-color: #ccc; /* Warna abu-abu */
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+
+
+
+
 img{
   size: 45%;
+}
+.owl-carousel-wrapper {
+  margin-bottom: -90px;
 }
 .owl-carousel .owl-nav span {
   display: none;
@@ -364,11 +418,13 @@ img{
   padding: 0;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
+  margin: auto;
   transform: translate(0, -50%);
   font-family: 'unicons';
   font-size: 100px;
   line-height: normal;
+
 }
 .owl-carousel .owl-nav .owl-prev:before {
   content: '\e833';
@@ -569,4 +625,7 @@ img{
 
 .project-info p strong {
   font-weight: bold; /* Make project names bold */
+}
+.owl-dot{
+  margin-top: 20px;
 }
